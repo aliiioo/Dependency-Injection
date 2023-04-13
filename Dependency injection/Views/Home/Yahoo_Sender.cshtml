@@ -1,0 +1,30 @@
+﻿@using Dependency_injection.Services;
+
+@inject YahooServiec emailsender
+@{
+
+    ViewData["Title"] = "DI ";
+
+}
+
+<div class="text-center">
+    <h1 class="display-4" style="padding:4rem">Hi Welcome to learn more ❤</h1>
+    <br />
+    <h3><a>@emailsender.SendEmail()</a></h3>
+    <hr />
+    <div class="container">
+        it was just practice for <strong<span style="color:red">Dependeny Injection (DI) </span></strong> Hope To learn it 🤞
+    </div>
+    <div class="container">
+        Let's learn together
+    </div>
+    <br />
+    <div class="container">
+        <a href="https://github.com/aliiioo">My GitHub</a>
+        <br />
+        <br />
+        <a href="https://www.linkedin.com/in/ali-ranjbaran">My linkedin</a>
+
+    </div>
+</div>
+
