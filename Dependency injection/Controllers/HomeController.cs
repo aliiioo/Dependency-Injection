@@ -1,4 +1,4 @@
-﻿
+﻿using Dependency_injection.DTOs;
 using Dependency_injection.Models;
 using Dependency_injection.Services.Interface;
 using Microsoft.AspNetCore.Mvc;
@@ -30,6 +30,12 @@ namespace Dependency_injection.Controllers
             return View();
         }
 
+
+        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        public IActionResult Error()
+        {
+            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
 
 
     }
