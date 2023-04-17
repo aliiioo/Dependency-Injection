@@ -24,12 +24,6 @@ namespace Dependency_injection.Controllers
             return View();
         }
 
-        public IActionResult Yahoo_Sender()
-        {
-           // inject Service in View 
-            return View();
-        }
-
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
